@@ -1,0 +1,12 @@
+<h1>Search Results for "{{ search_query }}"</h1>
+
+{% if results %}
+    <ul>
+        {% for item in results %}
+            <li>{{ item.field1 }} - {{ item.field2 }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Not found.</p>
+
+{% endif %}
